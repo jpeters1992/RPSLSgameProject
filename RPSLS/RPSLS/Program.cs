@@ -10,7 +10,9 @@ namespace RPSLS
     {
         static void Main(string[] args)
         {
-            
+            Game placeHolder = new Game();
+            placeHolder.RunGame();
+            Console.ReadLine();
         }
     }
 }
