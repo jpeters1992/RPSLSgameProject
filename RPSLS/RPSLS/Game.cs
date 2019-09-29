@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    class Game
+    public class Game
     {
         // member variables (HAS A)
 
         public Player playerOne;
         public Player playerTwo;
+        List<Gestures> gestures;
 
 
 
@@ -20,16 +21,22 @@ namespace RPSLS
         {
             playerOne = new Player();
             playerTwo = new Player();
+            gestures = new List<Gestures>();
 
         }
 
 
 
         // member methods (CAN DO)
-        public void RunGame() //master method
+        public void Use() // main method
         {
+            // list in order here what I want to execute in order. this is then called in the Progam.cs
             DisplayRules();
+            GetNumberOfPlayers();
+            p1.ChooseGesture();
+            p2.ChooseGesture();
 
+            p1.gesture();
         }
 
 
@@ -48,6 +55,27 @@ namespace RPSLS
             Console.WriteLine("--Lizard poisons Spock--");
             Console.WriteLine("--Spock smashes Scissors--");
             Console.WriteLine("--Spock vaporizes Rock--");
+        }
+
+        public int GetNumberOfPlayers()
+        {
+            Console.WriteLine("How many players?");
+            int numberOfPlayers = int.Parse(Console.ReadLine());
+            return numberOfPlayers;
+        }
+
+        public void createPlayers(int numberOfPlayers)
+        {
+            if (numberOfPlayers == 1)
+            {
+                p1 = new Human();
+                p2 = new Computer();
+            }
+            else if (numberOfPlayers == 2)
+            {
+                p1 = new Human();
+                p2 = new Human();
+            }
         }
     }
 }

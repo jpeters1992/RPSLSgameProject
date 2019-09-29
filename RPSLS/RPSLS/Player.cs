@@ -16,7 +16,7 @@ namespace RPSLS
         public abstract void ChooseGesture();
         public abstract void ChooseName();
 
-        // consturctor (SPAWNER)
+        // constructor (SPAWNER)
         public Player()
         {
             score = 0;

@@ -10,9 +10,8 @@ namespace RPSLS
     {
         static void Main(string[] args)
         {
-            Game placeHolder = new Game();
-            placeHolder.RunGame();
-            Console.ReadLine();
+            Game gameRPSLS = new Game();
+            gameRPSLS.Use(); // make a method called Use() that goes in order which methods to initiate first
         }
     }
 }
