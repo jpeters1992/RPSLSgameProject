@@ -9,13 +9,16 @@ namespace RPSLS
     public class Computer : Player
     {
 
-        //member variables (HAS A)
+        //MEMBER VARIABLES
+        List<string> variousGestures;
 
+        //CONSTRUCTOR
+        public Computer()
+        {
+            variousGestures = new List<string>() { "rock", "paper", "scissors", "lizard", "spock" };
+        }
 
-        //constructor (SPAWNER)
-
-
-        //member methods (CAN DO)
+        //MEMBER METHODS
 
 
     }

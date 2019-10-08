@@ -8,27 +8,20 @@ namespace RPSLS
 {
     public abstract class Player
     {
-        // member variables (HAS A)
+
+        //MEMBER VARIABLES
+        public int round;
         public int score;
         public string name;
         public string gesture;
 
-        public abstract void ChooseGesture();
-        public abstract void ChooseName();
-
-        // constructor (SPAWNER)
-        public Player()
+        //CONSTRUCTOR
+        public Player(string name)
         {
-            score = 0;
+            this.name = name;
+            this.score = 0;
         }
 
-
-
-        // member methods (CAN DO)
-
-
-        // **players gesture LIST method here, maybe?**
-
-
+        //MEMBER METHODS
     }
 }

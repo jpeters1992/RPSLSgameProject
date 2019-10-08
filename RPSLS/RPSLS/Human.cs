@@ -9,13 +9,13 @@ namespace RPSLS
     public class Human : Player
     {
 
-        //member variables (HAS A)
+        //MEMBER VARIABLES
 
 
-        //constructor (SPAWNER)
+        //CONSTRUCTOR
 
 
-        //member methods (CAN DO)
+        //MEMBER METHODS
 
     }
 }
