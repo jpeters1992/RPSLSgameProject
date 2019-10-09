@@ -23,5 +23,8 @@ namespace RPSLS
         }
 
         //MEMBER METHODS
+
+        public abstract void SelectGesture();
+        public abstract void SomeFunction1();
     }
 }
