@@ -16,9 +16,10 @@ namespace RPSLS
 
 
         //MEMBER METHODS
-        public void SelectGesture()
+        public override void SelectGesture()
         {
-            Console.WriteLine("Select one of the gestures: 'rock' 'paper' 'scissors' 'lizard' 'spock'");
+            Console.WriteLine("Select one of these gestures: 'rock' 'paper' 'scissors' 'lizard' 'spock'");
+            string gesture = Console.ReadLine();
 
             switch (gesture)
             {
@@ -40,9 +41,10 @@ namespace RPSLS
             }
         }
 
-        public void SomeFunction()
+        public override void SelectHumanPlayerName()
         {
-            //code execution 
+            Console.WriteLine("Please input your name.");
+            name = Console.ReadLine();
         }
 
     }
