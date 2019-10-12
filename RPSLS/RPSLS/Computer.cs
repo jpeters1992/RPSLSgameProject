@@ -19,7 +19,15 @@ namespace RPSLS
         }
 
         //MEMBER METHODS
+        public override void SelectGesture()
+        {
+            throw new NotImplementedException();
+        }
 
+        public override void SelectHumanPlayerName()
+        {
+            throw new NotImplementedException();
+        }
 
     }
 }

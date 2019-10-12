@@ -10,16 +10,14 @@ namespace RPSLS
     {
 
         //MEMBER VARIABLES
-        public int round;
         public int score;
         public string name;
         public string gesture;
 
         //CONSTRUCTOR
-        public Player(string name)
+        public Player()
         {
-            this.name = name;
-            this.score = 0;
+            score = 0;
         }
 
         //MEMBER METHODS
