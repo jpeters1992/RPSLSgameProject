@@ -21,9 +21,8 @@ namespace RPSLS
         }
 
         //MEMBER METHODS
-
         public abstract void SelectGesture();
-        public abstract void SelectHumanPlayerName();
+        public abstract void SelectPlayerName();
         
     }
 }

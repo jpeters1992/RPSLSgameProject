@@ -24,9 +24,9 @@ namespace RPSLS
             throw new NotImplementedException();
         }
 
-        public override void SelectHumanPlayerName()
+        public override void SelectPlayerName()
         {
-            throw new NotImplementedException();
+            name = "Computer";
         }
 
     }

@@ -41,7 +41,7 @@ namespace RPSLS
             }
         }
 
-        public override void SelectHumanPlayerName()
+        public override void SelectPlayerName()
         {
             Console.WriteLine("Please input your name.");
             name = Console.ReadLine();
