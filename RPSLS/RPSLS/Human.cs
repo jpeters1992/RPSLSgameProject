@@ -10,49 +10,48 @@ namespace RPSLS
     {
 
         //MEMBER VARIABLES
-
+        public string gestureChoice;
 
         //CONSTRUCTOR
+        public Human()
+        {
+
+        }
 
 
         //MEMBER METHODS
         public override void SelectPlayerName()
         {
-            Console.WriteLine("Please input your name.");
-            name = Console.ReadLine();
+            playerName = UserInterface.RetrieveUserInput("Choose player name.");
+            Console.WriteLine("Hello, " + playerName);
         }
 
         public override void SelectGesture()
         {
-            Console.WriteLine("Select one of these gestures: 'rock' 'paper' 'scissors' 'lizard' 'spock'");
-            string gesture = Console.ReadLine();
-
-            switch (gesture)
+            gestureChoice = UserInterface.RetrieveUserInput("Select one of these gestures: 'rock' 'paper' 'scissors' 'lizard' 'spock'");
+            switch (gestureChoice)
             {
                 case "rock":
-                    gesture = "rock";
-                    Console.WriteLine(name + " chose " + gesture);
+                    playerGesture = new Rock();
                     break;
                 case "paper":
-                    gesture = "paper";
-                    Console.WriteLine(name + " chose " + gesture);
+                    playerGesture = new Paper();
                     break;
                 case "scissors":
-                    gesture = "scissors";
-                    Console.WriteLine(name + " chose " + gesture);
+                    playerGesture = new Scissors();;
                     break;
                 case "lizard":
-                    gesture = "lizard";
-                    Console.WriteLine(name + " chose " + gesture);
+                    playerGesture = new Lizard();
                     break;
                 case "spock":
-                    gesture = "spock";
-                    Console.WriteLine(name + " chose " + gesture);
+                    playerGesture = new Spock();
                     break;
                 default:
+                    Console.WriteLine("Invalid entry");
                     SelectGesture();
                     break;
             }
+            Console.Clear();
         }
     }
 }

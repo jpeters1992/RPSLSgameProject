@@ -109,110 +109,110 @@ namespace RPSLS
 
         public void GestureLogic()
         {
-            if (playerOne.gesture == playerTwo.gesture)
+            if (playerOne.playerGesture == playerTwo.playerGesture)
             {
                 roundChoice = "tie";
                 Console.WriteLine("Players tied! Shoot again");
             }
-            else if (playerOne.gesture == "rock" && playerTwo.gesture == "scissors")
+            else if (playerOne.playerGesture == "rock" && playerTwo.playerGesture == "scissors")
             {
                 roundChoice = "rock";
-                playerOne.score++;
+                playerOne.playerScore++;
             }
-            else if (playerOne.gesture == "rock" && playerTwo.gesture == "lizard")
+            else if (playerOne.playerGesture == "rock" && playerTwo.playerGesture == "lizard")
             {
                 roundChoice = "rock";
-                playerOne.score++;
+                playerOne.playerScore++;
             }
-            else if (playerOne.gesture == "rock" && playerTwo.gesture == "spock")
+            else if (playerOne.playerGesture == "rock" && playerTwo.playerGesture == "spock")
             {
                 roundChoice = "spock";
-                playerTwo.score++;
+                playerTwo.playerScore++;
             }
-            else if (playerOne.gesture == "rock" && playerTwo.gesture == "paper")
+            else if (playerOne.playerGesture == "rock" && playerTwo.playerGesture == "paper")
             {
                 roundChoice = "paper";
-                playerTwo.score++;
+                playerTwo.playerScore++;
             }
-            else if (playerOne.gesture == "paper" && playerTwo.gesture == "rock")
+            else if (playerOne.playerGesture == "paper" && playerTwo.playerGesture == "rock")
             {
                 roundChoice = "paper";
-                playerOne.score++;
+                playerOne.playerScore++;
             }
-            else if (playerOne.gesture == "paper" && playerTwo.gesture == "spock")
+            else if (playerOne.playerGesture == "paper" && playerTwo.playerGesture == "spock")
             {
                 roundChoice = "paper";
-                playerOne.score++;
+                playerOne.playerScore++;
             }
-            else if (playerOne.gesture == "paper" && playerTwo.gesture == "scissors")
+            else if (playerOne.playerGesture == "paper" && playerTwo.playerGesture == "scissors")
             {
                 roundChoice = "scissors";
-                playerTwo.score++;
+                playerTwo.playerScore++;
             }
-            else if (playerOne.gesture == "paper" && playerTwo.gesture == "lizard")
+            else if (playerOne.playerGesture == "paper" && playerTwo.playerGesture == "lizard")
             {
                 roundChoice = "lizard";
-                playerTwo.score++;
+                playerTwo.playerScore++;
             }
-            else if (playerOne.gesture == "scissors" && playerTwo.gesture == "paper")
+            else if (playerOne.playerGesture == "scissors" && playerTwo.playerGesture == "paper")
             {
                 roundChoice = "scissors";
-                playerOne.score++;
+                playerOne.playerScore++;
             }
-            else if (playerOne.gesture == "scissors" && playerTwo.gesture == "lizard")
+            else if (playerOne.playerGesture == "scissors" && playerTwo.playerGesture == "lizard")
             {
                 roundChoice = "scissors";
-                playerOne.score++;
+                playerOne.playerScore++;
             }
-            else if (playerOne.gesture == "scissors" && playerTwo.gesture == "rock")
+            else if (playerOne.playerGesture == "scissors" && playerTwo.playerGesture == "rock")
             {
                 roundChoice = "rock";
-                playerTwo.score++;
+                playerTwo.playerScore++;
             }
-            else if (playerOne.gesture == "scissors" && playerTwo.gesture == "spock")
+            else if (playerOne.playerGesture == "scissors" && playerTwo.playerGesture == "spock")
             {
                 roundChoice = "spock";
-                playerTwo.score++;
+                playerTwo.playerScore++;
             }
-            else if (playerOne.gesture == "lizard" && playerTwo.gesture == "paper")
+            else if (playerOne.playerGesture == "lizard" && playerTwo.playerGesture == "paper")
             {
                 roundChoice = "lizard";
-                playerOne.score++;
+                playerOne.playerScore++;
             }
-            else if (playerOne.gesture == "lizard" && playerTwo.gesture == "spock")
+            else if (playerOne.playerGesture == "lizard" && playerTwo.playerGesture == "spock")
             {
                 roundChoice = "lizard";
-                playerOne.score++;
+                playerOne.playerScore++;
             }
-            else if (playerOne.gesture == "lizard" && playerTwo.gesture == "rock")
+            else if (playerOne.playerGesture == "lizard" && playerTwo.playerGesture == "rock")
             {
                 roundChoice = "rock";
-                playerTwo.score++;
+                playerTwo.playerScore++;
             }
-            else if (playerOne.gesture == "lizard" && playerTwo.gesture == "scissors")
+            else if (playerOne.playerGesture == "lizard" && playerTwo.playerGesture == "scissors")
             {
                 roundChoice = "scissors";
-                playerTwo.score++;
+                playerTwo.playerScore++;
             }
-            else if (playerOne.gesture == "spock" && playerTwo.gesture == "scissors")
+            else if (playerOne.playerGesture == "spock" && playerTwo.playerGesture == "scissors")
             {
                 roundChoice = "spock";
-                playerOne.score++;
+                playerOne.playerScore++;
             }
-            else if (playerOne.gesture == "spock" && playerTwo.gesture == "rock")
+            else if (playerOne.playerGesture == "spock" && playerTwo.playerGesture == "rock")
             {
                 roundChoice = "spock";
-                playerOne.score++;
+                playerOne.playerScore++;
             }
-            else if (playerOne.gesture == "spock" && playerTwo.gesture == "lizard")
+            else if (playerOne.playerGesture == "spock" && playerTwo.playerGesture == "lizard")
             {
                 roundChoice = "lizard";
-                playerTwo.score++;
+                playerTwo.playerScore++;
             }
-            else if (playerOne.gesture == "spock" && playerTwo.gesture == "paper")
+            else if (playerOne.playerGesture == "spock" && playerTwo.playerGesture == "paper")
             {
                 roundChoice = "paper";
-                playerTwo.score++;
+                playerTwo.playerScore++;
             }
         }
 

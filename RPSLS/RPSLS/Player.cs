@@ -10,13 +10,18 @@ namespace RPSLS
     {
 
         //MEMBER VARIABLES
-        public string name;
-        public Gesture gesture;
-        public int score;
+        public string playerName;
+        public Gesture playerGesture;
+        public int playerScore;
+        public bool isWinner;
 
         //CONSTRUCTOR
         public Player()
         {
+            SelectPlayerName();
+            playerGesture = null;
+            playerScore = 0;
+            isWinner = false;
         
         }
 

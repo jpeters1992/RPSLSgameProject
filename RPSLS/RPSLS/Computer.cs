@@ -9,27 +9,33 @@ namespace RPSLS
     public class Computer : Player
     {
         //MEMBER VARIABLES
-        public Random rng;
+        public static List<Gesture> gestureOptions = new List<Gesture>();
+        public static Random random = new Random();
 
         //CONSTRUCTOR
         public Computer()
         {
-            rng = new Random();
+
         }
 
         //MEMBER METHODS
         public override void SelectPlayerName()
         {
-            name = "Computer";
+            playerName = "Computer";
         }
 
         public override void SelectGesture()
         {
-            int gesture = rng.Next(0, gestures.Count);
-            this.gesture = gestures[gesture];
-            Console.WriteLine("Computer chose " + gestures[gesture]);
-        } 
+            gestureOptions.Add(new Rock());
+            gestureOptions.Add(new Paper());
+            gestureOptions.Add(new Scissors());
+            gestureOptions.Add(new Lizard());
+            gestureOptions.Add(new Spock());
 
-    
+            int randomChoice = random.Next(0, gestureOptions.Count());
+            playerGesture = gestureOptions[randomChoice];
+            Console.WriteLine("Computer chose " + playerGesture);
+            Console.Clear();
+        } 
     }
 }
