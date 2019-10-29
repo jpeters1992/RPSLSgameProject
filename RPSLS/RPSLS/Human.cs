@@ -16,6 +16,12 @@ namespace RPSLS
 
 
         //MEMBER METHODS
+        public override void SelectPlayerName()
+        {
+            Console.WriteLine("Please input your name.");
+            name = Console.ReadLine();
+        }
+
         public override void SelectGesture()
         {
             Console.WriteLine("Select one of these gestures: 'rock' 'paper' 'scissors' 'lizard' 'spock'");
@@ -24,28 +30,29 @@ namespace RPSLS
             switch (gesture)
             {
                 case "rock":
-                    Console.WriteLine("You chose " + gesture);
+                    gesture = "rock";
+                    Console.WriteLine(name + " chose " + gesture);
                     break;
                 case "paper":
-                    Console.WriteLine("You chose " + gesture);
+                    gesture = "paper";
+                    Console.WriteLine(name + " chose " + gesture);
                     break;
                 case "scissors":
-                    Console.WriteLine("You chose " + gesture);
+                    gesture = "scissors";
+                    Console.WriteLine(name + " chose " + gesture);
                     break;
                 case "lizard":
-                    Console.WriteLine("You chose " + gesture);
+                    gesture = "lizard";
+                    Console.WriteLine(name + " chose " + gesture);
                     break;
                 case "spock":
-                    Console.WriteLine("You chose " + gesture);
+                    gesture = "spock";
+                    Console.WriteLine(name + " chose " + gesture);
+                    break;
+                default:
+                    SelectGesture();
                     break;
             }
         }
-
-        public override void SelectPlayerName()
-        {
-            Console.WriteLine("Please input your name.");
-            name = Console.ReadLine();
-        }
-
     }
 }

@@ -6,14 +6,17 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    class Program
+    public abstract class Gesture
     {
-        static void Main(string[] args)
+        //MEMBER VARIABLES
+        public string gestureName;
+
+        //CONSTRUCTOR
+        public Gesture()
         {
-            Game newGame = new Game();
-            newGame.RunGame();
-            Console.ReadLine();
+
         }
+
+        //MEMBER METHODS
     }
 }
-

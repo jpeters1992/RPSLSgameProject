@@ -8,26 +8,28 @@ namespace RPSLS
 {
     public class Computer : Player
     {
-
         //MEMBER VARIABLES
-        List<string> variousGestures;
+        public Random rng;
 
         //CONSTRUCTOR
         public Computer()
         {
-            variousGestures = new List<string>() { "rock", "paper", "scissors", "lizard", "spock" };
+            rng = new Random();
         }
 
         //MEMBER METHODS
-        public override void SelectGesture()
-        {
-            throw new NotImplementedException();
-        }
-
         public override void SelectPlayerName()
         {
             name = "Computer";
         }
 
+        public override void SelectGesture()
+        {
+            int gesture = rng.Next(0, gestures.Count);
+            this.gesture = gestures[gesture];
+            Console.WriteLine("Computer chose " + gestures[gesture]);
+        } 
+
+    
     }
 }
