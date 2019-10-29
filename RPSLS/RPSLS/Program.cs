@@ -12,7 +12,6 @@ namespace RPSLS
         {
             Game newGame = new Game();
             newGame.RunGame();
-            Console.ReadLine();
         }
     }
 }
