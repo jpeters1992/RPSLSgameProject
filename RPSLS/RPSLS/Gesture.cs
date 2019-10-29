@@ -18,5 +18,6 @@ namespace RPSLS
         }
 
         //MEMBER METHODS
+        public abstract bool WinsAgainst(Gesture comparisonGestureChoice);
     }
 }

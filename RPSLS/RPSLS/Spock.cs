@@ -17,6 +17,14 @@ namespace RPSLS
         }
 
         //MEMBER METHODS
+        public override bool WinsAgainst(Gesture comparisonGestureChoice)
+        {
+            if (comparisonGestureChoice.gestureName == "scissors" || comparisonGestureChoice.gestureName == "rock")
+            {
+                return true;
+            }
+            return false;
+        }
 
     }
 }
